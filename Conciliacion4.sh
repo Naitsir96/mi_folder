@@ -53,7 +53,7 @@ $MYSQL_HOME/mysql $SQL_ARGS "select concat('\"',r.fecha_hora,'\"',',','\"',r.nro
 '\"',r.cod_com,'\"',',','\"',r.comercio,'\"',',','\"',r.usuario_txn,'\"',',','\"',r.usuario_dp,'\"',',','\"',r.status_adquiriente,'\"',',','\"',r.id,'\"',',',
 '\"',ifnull(r.nombre_comercial,''),'\"',',', '\"',ifnull(r.fecha_hora_creacion,''),'\"',',','\"',ifnull(r.exitosa,''),'\"',',','\"',ifnull(r.tarhab_email,''),'\"',',',
 '\"',ifnull(r.hash_tarjeta,''),'\"',',','\"',ifnull(r.monto_autorizado,''),'\"',',','\"',ifnull(r.numero_tarjeta_enmascarada,''),'\"',',',
-'\"',ifnull(r.nombre,'') ,'\"',',', '\"',ifnull(r.codigo_referencia,''),'\"',',', '\"',ifnull(r.codigo_unico_adq,''),'\"',',','\"',ifnull(tipo_bln,''),'\"',',','\"',ifnull(r.ref_id,''),'\"')
+'\"',ifnull(r.nombre,'') ,'\"',',', '\"',ifnull(r.codigo_referencia,''),'\"',',', '\"',ifnull(r.codigo_unico_adq,''),'\"',',','\"',ifnull(tipo_bln,''),'\"',',','\"',ifnull(r.ref_id,''),'\"') 
 from(
 select p.fecha_hora,p.nro_orden,p.seccode,p.marca,p.tarjeta,p.monto,p.abonado,p.cod_auto,p.dc,p.cod_com,p.comercio,p.usuario_txn,p.usuario_dp,
 p.status_adquiriente,c.id,c.nombre_comercial , a.fecha_hora_creacion,a.exitosa,a.tarhab_email, a.hash_tarjeta,a.monto_autorizado, 
